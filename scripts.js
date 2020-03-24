@@ -1,19 +1,13 @@
 //Add Function
-function add(firstValue, secondValue) {
-    return (firstValue + secondValue)
-}
+add = (firstValue, secondValue) => (firstValue + secondValue)
 
 //Subtract Function
-function subtract(firstValue, secondValue) {
-    return (firstValue - secondValue)
-}
+subtract = (firstValue, secondValue) => (firstValue - secondValue);
 
 //Multiply Function
-function multiply(firstValue, secondValue) {
-    return (firstValue * secondValue)
-}
+multiply = (firstValue, secondValue) => (firstValue * secondValue);
 
 //Divide Function
-function divide(firstValue, secondValue) {
-    return (firstValue / secondValue)
-}
+divide = (firstValue, secondValue) => (firstValue / secondValue);
+
+//Operate Function
