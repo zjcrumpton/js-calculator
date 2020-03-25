@@ -1,0 +1,101 @@
+#display {
+    resize: none;
+    font-size: 35px;
+    
+}
+
+/*Actual NumKey Styling*/
+.numKey {
+    background-color: #d4d3d8;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+/*Grid Container for the Numkeys*/
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#display {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #1f1f1f;
+    color: #fafafa;
+    
+}
+
+#clear {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #c7c7c9;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+#equals {
+    background-color: #c7c7c9;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+#operatorButtons {
+    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.opBtn {
+    background-color: #f97d10;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
