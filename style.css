@@ -1,6 +1,9 @@
 #display {
     resize: none;
-    font-size: 35px;
+    font-size: 60px;
+    width: 400px;
+    height: 100px;
+    margin-top: 135px;
     
 }
 
@@ -17,6 +20,11 @@
     border-radius: 12px;
     border: 2px solid black;
 }
+
+.numKey:active {
+    background-color: gray;
+}
+
 /*Grid Container for the Numkeys*/
 #gridContainer {
     display: grid;
@@ -63,6 +71,10 @@
     border: 2px solid black;
 }
 
+#clear:active {
+    background-color: gray;
+}
+
 #equals {
     background-color: #c7c7c9;
     border: none;
@@ -74,6 +86,10 @@
     font-size: 16px;
     border-radius: 12px;
     border: 2px solid black;
+}
+
+#equals:active {
+    background-color: gray;
 }
 
 #operatorButtons {
@@ -98,4 +114,8 @@
     border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 2;
+}
+
+.opBtn:active {
+    background-color: #ff8c00;
 }
