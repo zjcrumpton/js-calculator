@@ -11,42 +11,31 @@
 </head>
 
 <body>
-    <!--Temporary Number Fields-->
-    <div id="numForms">
-        <label>First Number:</label>
-        <input type = "number" id="fNumber">
-        <label>Second Number:</label>
-        <input type = "number" id="sNumber">
-
-        <!--Temporary Operate Button-->
-        <div id = "enterBtnDiv">
-            <button id = "operate" >Operate!</button>
-        </div>
-
-    </div>
         <div id = "gridContainer">
             <!--Display Field-->
-            <textarea id = "display" rows = "4" columns = "50" placeholder = "1 + 2 = 3"></textarea>
+            <textarea readonly id = "display" rows = "4" columns = "50" maxlength = "10"></textarea>
+
+        <div id = "subDisplay"></div>
+
+
 
             <!--Number Input Keys-->
             <div id = "keys">
                 <button class = "opBtn" id = "clear" value = "clear">Clear</button>
-                <button class = "numKey">7</button>
-                <button class = "numKey">8</button>
-                <button class = "numKey">9</button>
-                <button class = "numKey">4</button>
-                <button class = "numKey">5</button>
-                <button class = "numKey">6</button>
-                <button class = "numKey">1</button>
-                <button class = "numKey">2</button>
-                <button class = "numKey">3</button>
-                <button class = "numKey" id = "zero ">0</button>
-                <button class = "numKey">.</button>
-                <button class = "numKey" id = "equals">=</button>
-
+                <button class = "numKey" value = "7">7</button>
+                <button class = "numKey" value = "8">8</button>
+                <button class = "numKey" value = "9">9</button>
+                <button class = "numKey" value = "4">4</button>
+                <button class = "numKey" value = "5">5</button>
+                <button class = "numKey" value = "6">6</button>
+                <button class = "numKey" value = "1">1</button>
+                <button class = "numKey" value = "2">2</button>
+                <button class = "numKey" value = "3">3</button>
+                <button class = "numKey" id = "zero" value = "0">0</button>
+                <button class = "numKey" value = ".">.</button>
+                <button class = "eqKey" id = "equals">=</button>
             </div>
 
-            <!--Number Input Keys-->
             <div id = "operatorButtons">
                 <button class = "opBtn" id = "add" value = "+">+</button>
                 <button class = "opBtn" id = "subtract" value = "-">-</button>
@@ -55,10 +44,6 @@
             </div>
             <br>
     </div>
-
-
-
-
         <script src="scripts.js"></script>
         </body>
         </html>
