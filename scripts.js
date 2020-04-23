@@ -47,7 +47,7 @@ for (let i = 0; i < operatorArray.length; i++) {
             } else if (opPress == 2) {
                 dotState = 0
                 operator = this.value;
-                display.value = display.value.replace(lastOp, operator)
+                display.value = display.value.slice(0, - 1) + operator
                 lastOp = this.value;
             }})};
 //Clear Button
