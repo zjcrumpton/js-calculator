@@ -13,7 +13,7 @@
 <body>
         <div id = "gridContainer">
             <!--Display Field-->
-            <textarea readonly id = "display" rows = "4" columns = "50" maxlength = "10"></textarea>
+            <textarea readonly data-autoresize id = "display" rows = "4" columns = "50" maxlength = "10"></textarea>
 
         <div id = "subDisplay"></div>
 
@@ -32,8 +32,8 @@
                 <button class = "numKey" value = "2">2</button>
                 <button class = "numKey" value = "3">3</button>
                 <button class = "numKey" id = "zero" value = "0">0</button>
-                <button class = "numKey" value = ".">.</button>
-                <button class = "eqKey" id = "equals">=</button>
+                <button class = "numKey decimal" value = ".">.</button>
+                <button class = "eqKey" value = "equals" id = "equals">=</button>
             </div>
 
             <div id = "operatorButtons">
