@@ -26,7 +26,6 @@ operatorArray = Array.from(operatorNodeList)
 for (let i = 0; i < operatorArray.length; i++) {
         operatorArray[i].addEventListener("click", function() {
             if(opPress == 1) {
-                console.log("OpPress one")
                 opPress = 2
                 dotState = 0
                 operator = this.value;
@@ -44,10 +43,8 @@ for (let i = 0; i < operatorArray.length; i++) {
                     secondFloat = parseFloat(splitVal[1])
                     display.value = (`${operate(firstFloat, secondFloat, lastOp)}${operator}`)
                     lastOp = this.value;
-                    console.log(eqState)
                 }
             } else if (opPress == 2) {
-                console.log("opPress two")
                 dotState = 0
                 operator = this.value;
                 display.value = display.value.replace(lastOp, operator)
@@ -80,6 +77,9 @@ equalsBtn.addEventListener("click", function() {
             opState = 0
             eqState = 0
             opPress = 1
+    }
+    if (display.value.includes(".")) {
+        dotState = 1
     }
 });
 //Number Keys - These will update the display with the number you pressed
